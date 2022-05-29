@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  /* padding: 0 3em; */
+  min-height: 100vh; /*makes page into percentage thingy*/
+
+  /*makes page int flex-container*/
+  display: flex;
+  flex-direction: column;
+}
+
+/*navigation header*/
+header {
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  padding: 1em 6em;
+  gap: 1em;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+header a {
+  text-decoration: none; /*removes underline from links*/
+}
+/*--------------------------------*/
+
+/*top section*/
+.top {
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 6em;
+  gap: 1em;
+}
+
+.top img{
+    /* display: flex; */
+    flex: 1 1 auto;
+    padding: 3em;
+
+    text-align: center;
+    /* flex: 1 1 0; */
+    /* height: auto; */
+    /* width: 300px; */
+    background-color: grey;
+}
+
+/*--------------------------------*/
+.middle{
+
+  background-color: blue;
+
+  text-align: center;
+}
+.card_container {
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em 7em;
+}
+
+.card_container div > img {
+    border: 5px;
+    padding: 1em;
+    width: 100px;
+    background-color: beige;
+}
+
+.middle_2 {
+  background-color: coral;
+  padding: 1em 7em;
+}
+
+.bottom {
+  background-color: red;
+  padding: 1em 7em;
+}
+
+.sign_up_card {
+    background-color: blue;
+    padding: 1em;
+}
+
+footer {
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+    padding: 0 1em;
+}
