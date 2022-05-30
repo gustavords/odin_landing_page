@@ -84,52 +84,126 @@ button{
 
  */
 
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
- 
+header,
+.hero,
+.info,
+.quote,
+.call_to_action {
+  padding: 0 300px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
+header a {
+  padding: 1em;
+  text-decoration: none;
+}
+
+header .logo {
+  margin-right: auto;
+  padding: 1em 1em 1em 0;
+  font-weight: bolder;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 10em 290px;
+  gap: 5em;
+}
+
+.hero_right{
+  background-color: #6D747D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_left, .hero_right{
+  flex: 1;
+  padding: 1em;
+}
+
+.hero_left h1{
+  margin: 0;
+}
+
+.hero_right {
+  margin: 1em;
+}
+
+button{
+  padding: .5em 2em;
+  font-weight: bold;
+  font-size: large;
+  border:none ;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
 
 /*colors and fonts*/
-header, .hero, footer {
-  background-color: #1F2937
+header,
+.hero,
+footer {
+  background-color: #1f2937;
 }
 
-.hero{
-  font-weight:bolder;
-  color: #F9FAF8;
+.hero {
+  font-weight: bolder;
+  color: #f9faf8;
 }
-.hero h1{
+.hero h1 {
   font-size: 48px;
 }
 
-.hero p, header a {
+.hero p,
+header a {
   font-size: 18px;
-  color: #E5E7EB;;
+  color: #e5e7eb;
 }
 
-header .logo{
+header .logo {
   font-size: 24px;
-  color: #F9FAF8;
+  color: #f9faf8;
 }
 
-button, .action{
-  background-color: #3882F6;
+button,
+.action {
+  background-color: #3882f6;
+  color: #e5e7eb;
 }
 
-.info h2{
+.info h2 {
   font-size: 36px;
   font-weight: bolder;
-  color: #1F2937;
+  color: #1f2937;
 }
 
-.quote{
-  background-color: #E5E7EB;
+.quote {
+  background-color: #e5e7eb;
 }
-.quote > p{
+.quote > p {
   font-size: 36px;
   font-style: italic;
-  color: #1F2937;
+  color: #1f2937;
 }
 
-footer p{
-  color: #F9FAF8;
+footer p {
+  color: #f9faf8;
 }
