@@ -2,6 +2,8 @@
 
 Odin Project (Landing Page) for the Flexbox Module
 
+DID IT! pls dont rezise lol
+
 https://www.theodinproject.com/lessons/foundations-landing-page
 
 ![reference](./images/odin-project.png)
