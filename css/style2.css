@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+header {
+    background-color: crimson;
+    padding: 1em 6em;
+    margin: 0;
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+header>div {
+    margin-left: 1em;
+}
+
+.hero {
+    background-color: chartreuse;
+    padding: 1em 6em;
+    margin: 0;
+    display: flex;
+    gap: 2em;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.intro {
+    background-color: blueviolet;
+    width: 100%;
+    padding: 1em 0;
+}
+
+.intro-img {
+    background-color: aqua;
+    width: 100%;
+}
+
+.intro>h2 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.info {
+    background-color: coral;
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: bisque;
+    border: 1px solid black;
+
+}
+
+.card img {
+    border: 3px solid red;
+    width: 100px;
+    height: 100px;
+}
+
+.quote {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.action {
+    background-color: darkcyan;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: deeppink;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
