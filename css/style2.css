@@ -1,16 +1,31 @@
+:root{
+    --blue1: #0597F2;
+    --blue2: #0476D9;
+    --blue3: #0455BF;
+    --green1: #D7F205;
+    --green1b: #75C100;
+    --green2: #72A603;
+    --green3: #3A5F00;
+
+}
+
 body {
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    /* align-items: stretch; */
+    /* justify-content: space-evenly; */
 }
 
 header {
-    background-color: crimson;
-    padding: 1em 6em;
+    background-color: var(--blue3);
+    color: aliceblue;
+    padding: 1em 10%;
     margin: 0;
     display: flex;
+    align-items: center;
     flex: auto;
     flex-wrap: wrap;
 }
@@ -24,25 +39,43 @@ header>div {
     margin-left: 1em;
 }
 
+header a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
 .hero {
-    background-color: chartreuse;
+    background-color: var(--blue1);
     padding: 1em 6em;
     margin: 0;
     display: flex;
-    gap: 2em;
+    gap: 4em;
     flex: 1;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .intro {
-    background-color: blueviolet;
-    width: 100%;
-    padding: 1em 0;
+    background-color: var(--green1b);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 250px;
+    padding: 1em;
 }
 
 .intro-img {
     background-color: aqua;
+    width: 500px;
+    height: 250px;
+}
+
+.intro-img>img {
     width: 100%;
+    height: 100%;
 }
 
 .intro>h2 {
@@ -51,16 +84,34 @@ header>div {
     margin: 0;
 }
 
+.intro>p{
+    margin:0;
+}
+
+.intro>button {
+    align-self: flex-start;
+    
+}
+
 .info {
-    background-color: coral;
+    background-color: var(--blue2);
     padding: 1em;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .card {
-    background-color: bisque;
-    border: 1px solid black;
+    background-color: aliceblue;
+    /* border: 1px solid black; */
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    left: 200px;
 
 }
 
@@ -69,9 +120,12 @@ header>div {
     width: 100px;
     height: 100px;
 }
+.card p {
+    text-align: center;
+}
 
 .quote {
-    background-color: cornflowerblue;
+    background-color: var(--green2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,18 +133,21 @@ header>div {
 }
 
 .action {
-    background-color: darkcyan;
-
+    background-color: var(--green1b);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.container {
+border: aliceblue 1px solid;
+}
 
 footer {
-    background-color: deeppink;
-
+    background-color: var(--blue3);
     display: flex;
-
-    justify-content: center;
+    margin-top: auto;
     align-items: center;
+    justify-content: center;
+
+    color: aliceblue;
 }
