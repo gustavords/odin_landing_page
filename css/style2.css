@@ -1,4 +1,4 @@
-:root{
+:root {
     --blue1: #0597F2;
     --blue2: #0476D9;
     --blue3: #0455BF;
@@ -6,6 +6,9 @@
     --green1b: #75C100;
     --green2: #72A603;
     --green3: #3A5F00;
+    --orange1: #FA5120;
+    --grey1: #c0c0c0;
+
 
 }
 
@@ -33,6 +36,11 @@ header {
 header .logo {
     margin-right: auto;
     margin-left: 0;
+    color: var(--orange1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    font-style: oblique;
+    font-weight: 900;
 }
 
 header>div {
@@ -49,8 +57,7 @@ header a {
     padding: 1em 6em;
     margin: 0;
     display: flex;
-    gap: 4em;
-    flex: 1;
+    /* gap: 2em; */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -62,15 +69,25 @@ header a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 500px;
+    flex: 1;
+    max-width: 500px;
+    min-width: 370px;
     height: 250px;
     padding: 1em;
+
+    border-radius: .2em;
+    box-shadow: 0px 0px 16px 10px var(--blue2);
+    margin: 1em 2em 1em 1em;
 }
 
 .intro-img {
     background-color: aqua;
-    width: 500px;
+    margin: 1em 1em 1em 1em;
+    flex: 1;
+    max-width: 500px;
+    min-width: 370px;
     height: 250px;
+    box-shadow: 0px 0px 16px 10px var(--blue2);
 }
 
 .intro-img>img {
@@ -82,15 +99,25 @@ header a {
     font-size: 48px;
     font-weight: bolder;
     margin: 0;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.intro>p{
-    margin:0;
+.intro>p {
+    margin: 0;
+    color: var(--green3);
 }
 
 .intro>button {
     align-self: flex-start;
-    
+    /* border: solid 1px var(--green3); */
+    border: none;
+    border-radius: .3em;
+    padding: .5em;
+    /* background-color: var(--blue2); */
+    color: aliceblue;
+    background: linear-gradient(180deg, var(--blue3) 0%, var(--blue2) 15%, var(--blue1) 87%, var(--blue2) 100%);
+    text-shadow: 1px 2px 6px black;
 }
 
 .info {
@@ -102,7 +129,7 @@ header a {
 }
 
 .card {
-    background-color: aliceblue;
+    background-color: var(--grey1);
     /* border: 1px solid black; */
     padding: 1em;
     margin: 1em;
@@ -111,15 +138,19 @@ header a {
     justify-content: center;
     align-items: center;
     width: 150px;
-    left: 200px;
+    /* hei: 200px; */
+
+    border-radius: .2em;
+    box-shadow: 0px 0px 20px 6px var(--blue3);
 
 }
 
 .card img {
-    border: 3px solid red;
+    border: 3px solid var(--orange1);
     width: 100px;
     height: 100px;
 }
+
 .card p {
     text-align: center;
 }
@@ -129,7 +160,22 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1.5em;
 
+}
+
+.quote>p {
+    /* border: black 1px solid; */
+    font-size: 36px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    text-shadow: 0px 1px 1px black;
+}
+
+.quote span {
+    color: var(--blue3);
+    text-shadow: 0px 0px 1px var(--green1);
 }
 
 .action {
@@ -138,8 +184,9 @@ header a {
     justify-content: center;
     align-items: center;
 }
+
 .container {
-border: aliceblue 1px solid;
+    border: aliceblue 1px solid;
 }
 
 footer {
