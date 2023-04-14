@@ -77,7 +77,7 @@ header a {
 
     border-radius: .2em;
     box-shadow: 0px 0px 16px 10px var(--blue2);
-    margin: 1em 2em 1em 1em;
+    margin: 1em 1em 1em 1em;
 }
 
 .intro-img {
@@ -146,13 +146,16 @@ header a {
 }
 
 .card img {
-    border: 3px solid var(--orange1);
+    /* border: 3px solid var(--orange1); */
     width: 100px;
     height: 100px;
 }
 
 .card p {
     text-align: center;
+    color: black;
+    text-shadow: 0px 1px 7px aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .quote {
@@ -160,7 +163,7 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5em;
+    padding: 2em;
 
 }
 
@@ -183,11 +186,38 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1em;
 }
 
 .container {
-    border: aliceblue 1px solid;
+    margin: 1em;
+    border-radius: .3em;
+    padding: 1em;
+    color: aliceblue;
+    background: linear-gradient(180deg, var(--blue3) 0%, var(--blue2) 15%, var(--blue1) 87%, var(--blue2) 100%);
+    text-shadow: 1px 2px 6px black;
 }
+
+.container h2 {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--orange1);
+}
+
+.container>button{
+    align-self: flex-start;
+    /* border: solid 1px var(--green3); */
+    border: none;
+    border-radius: .3em;
+    padding: .5em;
+    /* background-color: var(--blue2); */
+    color: white;
+    /* background: linear-gradient(180deg, aliceblue 0%, rgb(200, 188, 188) 15%, var(--grey1) 87%, grey 100%); */
+    background: linear-gradient(180deg, var(--green2) 0%, var(--green1b) 15%, var(--green1) 87%, var(--green1b) 100%);
+
+    text-shadow: 1px 2px 6px black;
+}
+
 
 footer {
     background-color: var(--blue3);
@@ -197,4 +227,5 @@ footer {
     justify-content: center;
 
     color: aliceblue;
+    padding: 1em;
 }
