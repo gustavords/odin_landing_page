@@ -50,7 +50,67 @@ header>div {
 header a {
     text-decoration: none;
     color: aliceblue;
+    padding: 1em;
 }
+
+
+.burger_button {
+    position: absolute;
+    top: .75rem;
+    right: 10%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: aliceblue; */
+    width: 50px;
+    height: 40px;
+}
+
+.burger_button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: .2em;
+}
+
+@media (max-width:635px) {
+    .burger_button {
+        display: flex;
+    }
+
+    /*.links.links */
+    div.links {
+        
+        display: none;
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .links {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: .75em;
+        padding-top: 1em;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+
+}
+
+.links {
+    display: flex;
+    margin: 0;
+
+}
+
 
 .hero {
     background-color: var(--blue1);
@@ -155,7 +215,7 @@ header a {
     text-align: center;
     color: black;
     text-shadow: 0px 1px 7px aliceblue;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .quote {
@@ -164,7 +224,6 @@ header a {
     justify-content: center;
     align-items: center;
     padding: 2em;
-
 }
 
 .quote>p {
@@ -204,7 +263,7 @@ header a {
     color: var(--orange1);
 }
 
-.container>button{
+.container>button {
     align-self: flex-start;
     /* border: solid 1px var(--green3); */
     border: none;
