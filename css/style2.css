@@ -53,6 +53,14 @@ header a {
     padding: 1em;
 }
 
+.link>a:hover {
+    /* background-color: var(--blue1); */
+    color: var(--orange1);
+    text-shadow: 0px 2px 3px black;
+    font-size: large;
+    /* box-shadow: 0px 0px 25px 10px var(--blue2); */
+}
+
 
 .burger_button {
     position: absolute;
@@ -80,7 +88,7 @@ header a {
 
     /*.links.links */
     div.links {
-        
+
         display: none;
         width: 100%;
     }
@@ -98,9 +106,16 @@ header a {
         padding-top: 1em;
     }
 
+    /* .link, .link>a {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    } */
+
     .links.active {
         display: flex;
     }
+    
 
 
 }
@@ -108,7 +123,6 @@ header a {
 .links {
     display: flex;
     margin: 0;
-
 }
 
 
@@ -180,6 +194,15 @@ header a {
     text-shadow: 1px 2px 6px black;
 }
 
+.intro .sign-up_button:hover{
+    /* background: linear-gradient(180deg, var(--green2) 0%, var(--green1b) 15%, var(--green1) 87%, var(--green1b) 100%); */
+    box-shadow: 0px 0px 3px 1px var(--blue2);
+    color: yellow;
+    /* color: var(--green1); */
+
+    text-shadow: 0px 1px 2px black;
+}
+
 .info {
     background-color: var(--blue2);
     padding: 1em;
@@ -211,11 +234,16 @@ header a {
     height: 100px;
 }
 
+
 .card p {
     text-align: center;
     color: black;
     text-shadow: 0px 1px 7px aliceblue;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card:hover img{
+    width: 110px;
+    height: 110px;
 }
 
 .quote {
@@ -276,6 +304,12 @@ header a {
 
     text-shadow: 1px 2px 6px black;
 }
+.container .sign-up_button:hover{
+    /* background: linear-gradient(180deg, var(--green2) 0%, var(--green1b) 15%, var(--green1) 87%, var(--green1b) 100%); */
+    box-shadow: 0px 0px 3px 2px var(--green1);
+    color: var(--orange1);
+    text-shadow: 0px 2px 2px aliceblue;
+}
 
 
 footer {
@@ -287,4 +321,4 @@ footer {
 
     color: aliceblue;
     padding: 1em;
-}
+}aliceblue
